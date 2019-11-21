@@ -44,6 +44,12 @@ class Interfaz {
 
     mostrarResultado(resultado, moneda, crypto){
 
+        // En caso de mostrar resultado anterior ocultarlo
+        const resultAnterior = document.querySelector('#resultado > div');
+        if(resultAnterior){
+            resultAnterior.remove(); // si existe, remuevelo.
+        }
+
         const datosMoneda= resultado[crypto][moneda]; // Parece array de php pero asi se puede acceder a objetos en JS
         
         console.log(datosMoneda);
