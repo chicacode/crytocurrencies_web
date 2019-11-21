@@ -53,7 +53,7 @@ class Interfaz {
             actualizado = new Date(datosMoneda.LASTUPDATE * 1000).toLocaleDateString('es-US'); // la fecha que ha sido actualizado
         // construir el template
         let templateHTML = `
-            <div class="card bg-primary">
+            <div class="card bg-dark">
                 <div class="card-body text-light">
                     <h2 class="card-title">Result:</h2>
                     <p>The Price from ${datosMoneda.FROMSYMBOL} to ${datosMoneda.TOSYMBOL} currency is: $${precio}</p>
